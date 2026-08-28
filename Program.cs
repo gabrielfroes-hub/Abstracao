@@ -10,21 +10,21 @@
 
             meuFusca.Marca = "Volkswagen";
             meuFusca.Modelo = "Fusca";
-            meuFusca.Ano = 1975;
-            meuFusca.Cor = "Azul";
+            meuFusca.ano = 1975;
+            meuFusca.cor = "Azul";
 
             Carro carroVizinho = new Carro();
 
             carroVizinho.Marca = "Chevrolet";
             carroVizinho.Modelo = "Corsa";
-            carroVizinho.Ano = 2005;
-            carroVizinho.Cor = "Prata";
+            carroVizinho.ano = 2005;
+            carroVizinho.cor = "Prata";
 
             Console.WriteLine("Informações do meu carro:");
-            meuFusca.ExibirInformacoes();
+            meuFusca.exibirInformacoes();
 
             Console.WriteLine("Informações do carro do vizinho");
-            carroVizinho.ExibirInformacoes();
+            carroVizinho.exibirInformacoes();
 
             // EXERCÍCIO 1
             Produto produto = new Produto();
@@ -50,15 +50,18 @@
 
             // EXERCÍCIO 3
             ContaBancaria conta = new ContaBancaria();
-            conta.Titular = "Maria";
-            conta.saldo = 1000.00;
-            conta.Numeroconta = 12345;
-            conta = new Contabancaria();
-            conta.depositar(1000.00);
-            conta.sacar(500.00);
 
-            Console.WriteLine("Informações da conta");
-            conta.exibirInformacoes();
+            conta.Titular = "Froés";
+            conta.NumeroConta = "25";
+            conta.Saldo = 750;
+
+            Console.WriteLine("Informações da conta bancaria:");
+            conta.ExibirInformacoesContaBancaria1();
+            conta.Depositar(500);
+            conta.ExibirInformacoesContaBancaria2();
+            conta.Sacar(300);
+            conta.ExibirInformacoesContaBancaria3();
+
 
             // EXERCÍCIO 4 
 

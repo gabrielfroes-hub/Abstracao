@@ -1,4 +1,6 @@
-﻿namespace Abstracao
+﻿using System.Timers;
+
+namespace Abstracao
 {
     internal class Program
     {
@@ -65,6 +67,34 @@
 
             // EXERCÍCIO 4 
 
+            Time time = new Time();
+
+            time.NomeDoTime = "Xuripitas FC";
+
+            Jogador jogador1 = new Jogador();
+
+            jogador1.Nome = "Gabriel Fróes";
+            jogador1.Posicao = "Volante";
+            jogador1.NumeroCamisa = 8;
+
+            Jogador jogador2 = new Jogador();
+
+            jogador2.Nome = "Neymar";
+            jogador2.Posicao = "Ponta";
+            jogador2.NumeroCamisa = 10;
+
+            Jogador jogador3 = new Jogador();
+
+            jogador3.Nome = "Murilo";
+            jogador3.Posicao = "Atacante";
+            jogador3.NumeroCamisa = 9;
+
+            time.AdicionarJogador(jogador1);
+            time.AdicionarJogador(jogador2);
+            time.AdicionarJogador(jogador3);
+
+            time.ListarJogadores();
+            Console.WriteLine("--------------------------------------");
 
             Console.ReadKey();
         }
